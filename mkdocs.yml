@@ -1,0 +1,69 @@
+site_name: Aula de Git e Docker
+site_description: Aula completa de Git e Docker, do Zero ao Git Flow e Docker Compose.
+site_author: "Professor"
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+nav:
+  - Início: index.md
+  - Git:
+    - Conceitos Básicos: git/conceitos.md
+    - Instalação e Configuração: git/instalacao.md
+    - Comandos Essenciais: git/comandos.md
+    - Ignorando Arquivos (.gitignore): git/gitignore.md
+    - Branches e Remotos: git/branches.md
+    - Comandos Avançados: git/avancado.md
+    - Boas Práticas e Segurança: git/boas-praticas.md
+    - Resolvendo Problemas: git/troubleshooting.md
+    - Truques e Produtividade: git/truques.md
+    - Git Flow: git/git-flow.md
+    - Projeto Prático: git/projeto-pratico.md
+  - Docker:
+    - O que é Docker?: docker/introducao.md
+    - Instalação: docker/instalacao.md
+    - Imagens e Contêineres: docker/modelo-mental.md
+    - Comandos Básicos: docker/comandos.md
+    - Comandos Avançados: docker/comandos-avancados.md
+    - Dockerfile: docker/dockerfile.md
+    - Docker Compose: docker/compose.md
+    - Volumes e Redes: docker/volumes-redes.md
+    - Boas Práticas: docker/boas-praticas.md
+    - Projeto Prático: docker/projeto-pratico.md
+  - Integração Contínua (CI/CD): ci-cd.md
