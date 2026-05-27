@@ -1,0 +1,148 @@
+/* ===================================
+   Mermaid Diagrams — Dark/Light Mode
+   =================================== */
+
+/* --- DARK MODE (slate) --- */
+
+/* Git Graph — commit labels (rotated text below commits) */
+[data-md-color-scheme="slate"] .mermaid .commit-label {
+  fill: #e0e0e0 !important;
+  color: #e0e0e0 !important;
+  font-size: 0.85em;
+}
+
+/* Git Graph — branch labels (colored boxes on the left) */
+[data-md-color-scheme="slate"] .mermaid .branch-label {
+  fill: #000000 !important;
+  color: #000000 !important;
+}
+
+/* Git Graph — tag labels */
+[data-md-color-scheme="slate"] .mermaid .tag-label {
+  fill: #000000 !important;
+  color: #000000 !important;
+}
+
+/* Git Graph — commit label background */
+[data-md-color-scheme="slate"] .mermaid .commit-label-bkg {
+  fill: #1e1e1e !important;
+  stroke: #555 !important;
+  opacity: 0.85;
+}
+
+/* Flowchart — node text */
+[data-md-color-scheme="slate"] .mermaid .nodeLabel,
+[data-md-color-scheme="slate"] .mermaid .node .label,
+[data-md-color-scheme="slate"] .mermaid .label {
+  color: #e0e0e0 !important;
+  fill: #e0e0e0 !important;
+}
+
+/* Flowchart — node backgrounds */
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node circle,
+[data-md-color-scheme="slate"] .mermaid .node ellipse,
+[data-md-color-scheme="slate"] .mermaid .node polygon {
+  fill: #2d2d2d !important;
+  stroke: #90caf9 !important;
+}
+
+/* Flowchart — edge label text and background */
+[data-md-color-scheme="slate"] .mermaid .edgeLabel {
+  color: #e0e0e0 !important;
+  fill: #e0e0e0 !important;
+  background-color: #1e1e1e !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel rect {
+  fill: #1e1e1e !important;
+  opacity: 0.95;
+}
+
+/* Flowchart — lines and arrows */
+[data-md-color-scheme="slate"] .mermaid .edgePath .path,
+[data-md-color-scheme="slate"] .mermaid .flowchart-link {
+  stroke: #90caf9 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid marker path {
+  fill: #90caf9 !important;
+  stroke: #90caf9 !important;
+}
+
+/* Flowchart — decision nodes (rhombus) */
+[data-md-color-scheme="slate"] .mermaid .node .label foreignObject div {
+  color: #e0e0e0 !important;
+}
+
+/* Subgraphs */
+[data-md-color-scheme="slate"] .mermaid .cluster rect {
+  fill: #1a1a2e !important;
+  stroke: #555 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .cluster span,
+[data-md-color-scheme="slate"] .mermaid .cluster-label .nodeLabel {
+  color: #b0bec5 !important;
+  fill: #b0bec5 !important;
+}
+
+/* Sequence diagrams */
+[data-md-color-scheme="slate"] .mermaid .actor {
+  fill: #2d2d2d !important;
+  stroke: #90caf9 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .actor-line {
+  stroke: #555 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid text.actor-label,
+[data-md-color-scheme="slate"] .mermaid .actor text {
+  fill: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .messageLine0,
+[data-md-color-scheme="slate"] .mermaid .messageLine1 {
+  stroke: #90caf9 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .messageText {
+  fill: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .note rect {
+  fill: #37474f !important;
+  stroke: #546e7a !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .note text,
+[data-md-color-scheme="slate"] .mermaid .noteText {
+  fill: #eceff1 !important;
+}
+
+/* General fallback — all SVG text in dark mode */
+[data-md-color-scheme="slate"] .mermaid svg text {
+  fill: #e0e0e0 !important;
+}
+
+/* Override for branch/tag labels that need dark text on colored background */
+[data-md-color-scheme="slate"] .mermaid .branch-label-bkg + text,
+[data-md-color-scheme="slate"] .mermaid .tag-label-bkg + text {
+  fill: #000000 !important;
+}
+
+/* --- LIGHT MODE (default) --- */
+[data-md-color-scheme="default"] .mermaid .edgeLabel rect {
+  fill: #ffffff !important;
+  opacity: 0.9;
+}
+
+[data-md-color-scheme="default"] .mermaid .cluster rect {
+  fill: #f5f5f5 !important;
+  stroke: #ccc !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .commit-label {
+  fill: #333333 !important;
+}

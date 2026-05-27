@@ -31,7 +31,11 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -40,6 +44,12 @@ markdown_extensions:
   - pymdownx.snippets
   - attr_list
   - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mermaid-theme.js
 
 nav:
   - Início: index.md
@@ -54,6 +64,13 @@ nav:
     - Resolvendo Problemas: git/troubleshooting.md
     - Truques e Produtividade: git/truques.md
     - Git Flow: git/git-flow.md
+    - "Git Flow — Branches": git/git-flow-branches.md
+    - "Git Flow — Commits": git/git-flow-commits.md
+    - "Git Flow — Rebase e Conflitos": git/git-flow-rebase.md
+    - "Git Flow — Release": git/git-flow-release.md
+    - "Git Flow — Code Review e Checklist": git/git-flow-code-review.md
+    - "Git Flow — Exercícios": git/git-flow-exercicios.md
+    - "Git Flow — FAQ": git/git-flow-faq.md
     - Projeto Prático: git/projeto-pratico.md
   - Docker:
     - O que é Docker?: docker/introducao.md
