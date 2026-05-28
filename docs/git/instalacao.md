@@ -1,62 +1,118 @@
-# Instalação e Configuração
+# Instalação e Configuração do Git
 
-## Instalação
+## 1. Instalação
 
-Depois de instalar, confirme com:
-```bash
-git --version
-```
+Escolha seu sistema operacional e siga o passo a passo:
 
-### Windows
-Instale o Git for Windows a partir do [site oficial do Git](https://git-scm.com/). Após instalar, use preferencialmente o **Git Bash**.
+=== "Windows"
 
-### Linux Debian/Ubuntu/Mint
-```bash
-sudo apt update
-sudo apt install git -y
-git --version
-```
+    **Passo 1 —** Acesse o [site oficial do Git](https://git-scm.com/) e clique em **"Download for Windows"**.
 
-### Fedora
-```bash
-sudo dnf install git -y
-git --version
-```
+    <div class="img-placeholder">
+      <span>📸 Imagem: Página inicial do site git-scm.com com botão de download destacado</span>
+    </div>
 
-### Arch Linux
-```bash
-sudo pacman -S git
-git --version
-```
+    **Passo 2 —** Execute o instalador baixado (`.exe`) e avance pelas telas clicando em **Next**. Nas opções de editor padrão, selecione **Visual Studio Code** (se disponível) ou mantenha o padrão.
 
-### macOS
-Pelo terminal padrão:
-```bash
-xcode-select --install
-```
-Ou, usando Homebrew:
-```bash
-brew install git
-git --version
-```
+    <div class="img-placeholder">
+      <span>📸 Imagem: Tela do instalador do Git for Windows — seleção de editor padrão</span>
+    </div>
+
+    **Passo 3 —** Ao final da instalação, abra o **Git Bash** (clique com botão direito na área de trabalho → "Git Bash Here") e confirme:
+
+    ```bash
+    git --version
+    ```
+
+    !!! tip "Dica: prefira o Git Bash no Windows"
+        O Git Bash emula um terminal Unix, o que torna os comandos idênticos ao Linux/macOS. Evite usar o CMD ou PowerShell para os exercícios desta aula.
+
+=== "Linux (Ubuntu/Debian/Mint)"
+
+    Abra o terminal e execute:
+
+    ```bash
+    sudo apt update
+    sudo apt install git -y
+    git --version
+    ```
+
+    !!! note "Saída esperada"
+        ```
+        git version 2.43.0
+        ```
+        O número pode variar conforme a versão disponível no repositório do seu sistema.
+
+=== "Fedora"
+
+    ```bash
+    sudo dnf install git -y
+    git --version
+    ```
+
+=== "Arch Linux"
+
+    ```bash
+    sudo pacman -S git
+    git --version
+    ```
+
+=== "macOS"
+
+    **Opção A — Ferramentas de Linha de Comando do Xcode:**
+    ```bash
+    xcode-select --install
+    ```
+
+    **Opção B — Via Homebrew (recomendado para ter a versão mais recente):**
+    ```bash
+    brew install git
+    git --version
+    ```
 
 ---
 
-## Configuração inicial
+## 2. Configuração Inicial
 
-Configure seu nome e e-mail. Eles aparecem no histórico dos commits.
+Logo após instalar, você precisa identificar-se. Essas informações aparecem em **todo commit** que você fizer.
 
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seuemail@example.com"
 ```
 
-Verifique se a configuração deu certo:
+Verifique se deu certo:
 ```bash
 git config --global --list
 ```
 
-Opcionalmente, configure o **VS Code** como editor padrão do Git:
+!!! note "Saída esperada"
+    ```
+    user.name=Seu Nome
+    user.email=seuemail@example.com
+    ```
+
+---
+
+## 3. Configurando o VS Code como editor padrão
+
+Quando o Git precisar abrir um editor (ex: ao escrever a mensagem de um commit longo), ele usará o VS Code:
+
 ```bash
 git config --global core.editor "code --wait"
 ```
+
+**Como testar:** Abra o terminal integrado do VS Code (`Ctrl + J`) e tente editar o último commit:
+
+```bash
+git commit --amend
+```
+
+O VS Code abrirá automaticamente um arquivo para você editar a mensagem.
+
+<div class="img-placeholder">
+  <span>📸 Imagem: VS Code abrindo automaticamente para editar a mensagem de commit após `git commit --amend`</span>
+</div>
+
+!!! success "Configuração completa!"
+    Você está pronto para começar a usar o Git. Siga para a próxima seção: **Comandos Essenciais**.
