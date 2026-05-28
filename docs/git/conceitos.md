@@ -22,11 +22,6 @@ commit 2: adiciona tela de login
 commit 3: corrige validação do formulário
 commit 4: prepara versão 1.0.0
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Comparação visual — pasta bagunçada de arquivos duplicados vs. histórico limpo de commits no Git</span>
-</div>
-
 !!! note "Ideia central"
     Git é uma **linha do tempo organizada** do seu projeto. Você pode viajar para qualquer ponto nessa linha do tempo.
 
@@ -63,11 +58,6 @@ graph LR
 | **Staging Area** | Área de preparação — você escolhe o que vai entrar no próximo commit. | `git add` |
 | **Repository** | O histórico salvo dentro da pasta oculta `.git`. | `git commit` |
 | **Remoto** | Uma cópia do repositório em um servidor (GitHub, GitLab, etc.). | `git push` / `git pull` |
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Diagrama visual das 3 áreas do Git — Working Directory, Staging Area e Repository — com setas e ícones</span>
-</div>
-
 ---
 
 ## 4. Experimente: vendo as três áreas na prática

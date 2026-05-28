@@ -23,11 +23,6 @@ docker run -d --name api --network minha-rede -p 3000:3000 minha-api
 ```bash
 docker-compose up -d
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Diagrama mostrando os 3 serviços (API, PostgreSQL, Redis) conectados na mesma rede Docker criada pelo Compose</span>
-</div>
-
 ---
 
 ## Estrutura do docker-compose.yml
@@ -113,11 +108,6 @@ docker-compose up -d
 
 - Login: `admin@workshop.com` / `admin123`
 - Crie uma conexão apontando para o host `db` (nome do serviço!) na porta `5432`
-
-<div class="img-placeholder">
-  <span>📸 Imagem: pgAdmin rodando em http://localhost:5050 com formulário de conexão preenchido apontando para o host "db"</span>
-</div>
-
 ---
 
 ## 📋 Comandos Essenciais do Compose
@@ -170,7 +160,3 @@ services:
 ```
 
 O Compose lê automaticamente o arquivo `.env` na mesma pasta.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Docker Desktop — aba Containers mostrando os serviços do Compose agrupados como "workshop" com status rodando</span>
-</div>

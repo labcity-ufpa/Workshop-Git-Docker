@@ -23,11 +23,6 @@ git init
 
 !!! note "O que acontece aqui?"
     O Git cria uma pasta oculta chamada `.git` dentro de `aula-git`. É nela que fica todo o histórico do projeto. **Nunca apague essa pasta manualmente.**
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Explorer do VS Code mostrando a pasta `.git` oculta dentro do projeto após `git init`</span>
-</div>
-
 ### Passo 3 — Crie um arquivo
 
 ```bash
@@ -53,11 +48,6 @@ Untracked files:
 
 !!! tip "Dica de IDE: Source Control no VS Code"
     No VS Code, clique no ícone de **controle de versão** (ícone de bifurcação na barra lateral esquerda, ou `Ctrl + Shift + G`). O arquivo `README.md` aparecerá como **"U" (Untracked)**.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Painel "Source Control" do VS Code mostrando README.md como arquivo não rastreado (U)</span>
-</div>
-
 ### Passo 4 — Adicione ao Staging (preparação)
 
 ```bash
@@ -73,11 +63,6 @@ Changes to be committed:
 
 !!! tip "Dica de IDE: botão `+` no VS Code"
     No painel **Source Control**, passe o mouse sobre o arquivo e clique no ícone **`+`** para adicioná-lo ao stage — equivalente ao `git add`.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code Source Control — cursor sobre o arquivo README.md com o botão `+` (Stage Changes) visível</span>
-</div>
-
 ### Passo 5 — Faça o primeiro commit
 
 ```bash
@@ -93,11 +78,6 @@ git commit -m "docs: adiciona README inicial"
 
 !!! tip "Dica de IDE: commit pelo VS Code"
     No painel **Source Control**, digite a mensagem do commit no campo de texto e pressione `Ctrl + Enter` (ou clique no botão **✓ Commit**).
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code Source Control — campo de mensagem de commit preenchido com botão "Commit" destacado</span>
-</div>
-
 ### Passo 6 — Veja o histórico
 
 ```bash

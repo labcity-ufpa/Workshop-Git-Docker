@@ -11,11 +11,6 @@ Este é o cenário que todo desenvolvedor já viveu:
 > *"Funcionou no meu computador! Não sei por que não roda no servidor..."*
 
 Com Docker, o contêiner leva consigo **exatamente** o ambiente que a aplicação precisa — sistema de arquivos, variáveis de ambiente, bibliotecas e tudo mais. O resultado é sempre o mesmo, em qualquer máquina.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Diagrama "Works on my machine" — desenvolvedor empurrando um contêiner igual para laptop, servidor de teste e produção</span>
-</div>
-
 ---
 
 ## Máquinas Virtuais vs Contêineres
@@ -49,11 +44,6 @@ Com Docker, o contêiner leva consigo **exatamente** o ambiente que a aplicaçã
     │    Sistema Operacional Host       │
     └──────────────────────────────────┘
     ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Diagrama comparativo lado a lado — arquitetura de VMs (com múltiplos Guest OS) vs. Contêineres Docker (compartilhando kernel)</span>
-</div>
-
 | Característica | VM | Contêiner |
 | :--- | :---: | :---: |
 | Tempo de inicialização | Minutos | Segundos |
@@ -84,7 +74,3 @@ Com Docker, o contêiner leva consigo **exatamente** o ambiente que a aplicaçã
 - **Pipelines de CI/CD** (GitHub Actions, GitLab CI rodam seus jobs em contêineres)
 - **Microsserviços em produção** (Kubernetes orquestra contêineres em escala)
 - **Ambientes de teste isolados** (cada branch pode ter seu próprio ambiente)
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Dashboard do Docker Desktop mostrando múltiplos contêineres rodando (PostgreSQL, Redis, API Node) com status e uso de recursos</span>
-</div>

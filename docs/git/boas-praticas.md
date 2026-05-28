@@ -65,11 +65,6 @@ git commit -m "chore: atualiza dependências do projeto"
 
 !!! tip "Dica de IDE: extensão Conventional Commits no VS Code"
     Instale a extensão **"Conventional Commits"** no VS Code para ter um assistente guiado ao fazer commits. Ao commitar pelo painel Source Control, ela apresenta um formulário com tipo, escopo e descrição.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code com a extensão "Conventional Commits" — formulário step-by-step para compor a mensagem do commit</span>
-</div>
-
 ---
 
 ## 🔒 Segurança: O que NUNCA versionar
@@ -104,11 +99,6 @@ git commit -m "chore: atualiza dependências do projeto"
    ```bash
    echo ".env" >> .gitignore
    ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Editor mostrando `.env` com valores reais vs. `.env.example` com valores vazios — destacando qual versionar</span>
-</div>
-
 ---
 
 !!! danger "Se uma senha já foi enviada por acidente"
@@ -151,12 +141,7 @@ Ao conectar ao GitHub, você tem duas opções:
     ```
 
     **Adicione ao GitHub:** Acesse **Settings → SSH and GPG keys → New SSH key** e cole a chave.
-
-    <div class="img-placeholder">
-      <span>📸 Imagem: GitHub Settings — tela "SSH and GPG keys" com botão "New SSH key" e campo para colar a chave pública</span>
-    </div>
-
-    Agora use URLs SSH:
+Agora use URLs SSH:
     ```bash
     git remote add origin git@github.com:usuario/repo.git
     git push  # sem precisar digitar senha

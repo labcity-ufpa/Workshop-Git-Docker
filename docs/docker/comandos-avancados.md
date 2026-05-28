@@ -26,11 +26,6 @@ docker inspect --format '{{.Config.Env}}' meu-postgres
 # Quais volumes estão mapeados?
 docker inspect --format '{{json .Mounts}}' meu-postgres | python -m json.tool
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Terminal mostrando o output do `docker inspect` com o JSON completo e um filtro `--format` extraindo o IP do contêiner</span>
-</div>
-
 ---
 
 ## 📊 Monitoramento em Tempo Real
@@ -54,11 +49,6 @@ Para monitorar apenas um contêiner:
 ```bash
 docker stats minha-api
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Terminal com `docker stats` rodando em tempo real, mostrando múltiplos contêineres com suas métricas de CPU e memória</span>
-</div>
-
 ### `docker top` — Processos dentro do contêiner
 
 Lista os processos do sistema operacional rodando **dentro** de um contêiner específico:
@@ -101,11 +91,6 @@ docker logs --since 2024-01-01T10:00:00 minha-api
 
 !!! tip "Dica de IDE: Docker Extension para VS Code"
     Instale a extensão **"Docker"** (da Microsoft) no VS Code. Ela adiciona uma aba lateral com todos os contêineres, imagens e volumes. Clique com o botão direito em um contêiner para ver logs, abrir terminal, inspecionar e muito mais — sem sair do editor.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code com a extensão Docker — aba lateral mostrando contêineres em execução com menu de contexto aberto (Logs, Shell, Inspect, Stop)</span>
-</div>
-
 ---
 
 ## 🧹 Limpeza do Ambiente (`prune`)

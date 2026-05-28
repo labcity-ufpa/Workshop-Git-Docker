@@ -61,12 +61,7 @@
     # COPY . .
     # RUN npm install
     ```
-
-    <div class="img-placeholder">
-      <span>📸 Imagem: Comparação de dois builds — um usando cache corretamente (0.3s) vs um ignorando cache (45s) — destacando a diferença de tempo</span>
-    </div>
-
-    ---
+---
 
     **Use variáveis de ambiente para configuração**
 
@@ -148,11 +143,6 @@ docker build \
 docker push meu-app:1.2.3
 docker push meu-app:latest
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Docker Hub — repositório pessoal mostrando a imagem com múltiplas tags (latest, 1.2.3, 1.2) e datas de push</span>
-</div>
-
 ---
 
 ## 📦 Checklist antes de ir para produção

@@ -14,11 +14,6 @@ graph LR
     style A fill:#1e293b,stroke:#38bdf8
     style B fill:#1e293b,stroke:#22c55e
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Diagrama mostrando o mapeamento entre a pasta do host e a pasta dentro do contêiner PostgreSQL, com dados persistindo após o contêiner ser removido</span>
-</div>
-
 ---
 
 ## Tipos de Volume
@@ -60,11 +55,6 @@ graph LR
 
     !!! tip "Hot reload com Bind Mount"
         Com um Bind Mount, você edita o arquivo no VS Code e a mudança aparece instantaneamente dentro do contêiner — sem precisar rebuildar a imagem!
-
-    <div class="img-placeholder">
-      <span>📸 Imagem: VS Code mostrando arquivo sendo editado no host, com terminal do contêiner mostrando hot reload automático detectando a mudança</span>
-    </div>
-
 ---
 
 ## Tutorial: Testando a persistência
@@ -165,7 +155,3 @@ docker network inspect minha-rede
 # Remove redes não utilizadas
 docker network prune
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Output do `docker network inspect` mostrando os contêineres conectados à rede com seus nomes e endereços IP internos</span>
-</div>

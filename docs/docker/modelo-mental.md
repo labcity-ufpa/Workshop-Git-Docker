@@ -48,11 +48,6 @@ a1b2c3d4e5f6   nginx   "/docker-entrypoint.…"   0.0.0.0:8001->80/tcp   site-de
 b2c3d4e5f6a1   nginx   "/docker-entrypoint.…"   0.0.0.0:8002->80/tcp   site-staging
 c3d4e5f6a1b2   nginx   "/docker-entrypoint.…"   0.0.0.0:8003->80/tcp   site-prod
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Docker Desktop — aba Containers mostrando 3 instâncias do nginx rodando em portas 8001, 8002 e 8003 com status verde</span>
-</div>
-
 ---
 
 ## Ciclo de Vida de um Contêiner
@@ -84,11 +79,6 @@ O [Docker Hub](https://hub.docker.com) é como o GitHub, mas para imagens Docker
 - `node` — runtime Node.js
 - `redis` — banco de dados em memória
 - `mysql` — banco de dados MySQL
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Docker Hub — página de busca mostrando resultados para "postgres" com a imagem oficial destacada, número de pulls e descrição</span>
-</div>
-
 ```bash
 # Baixa a imagem oficial do PostgreSQL versão 16
 docker pull postgres:16-alpine

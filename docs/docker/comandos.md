@@ -15,11 +15,6 @@ O Docker vai:
 2. Baixar automaticamente do Docker Hub.
 3. Criar e executar um contêiner a partir dela.
 4. Imprimir a mensagem de boas-vindas e encerrar.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Terminal mostrando o output do `docker run hello-world` com mensagem "Hello from Docker!" e explicação do que ocorreu</span>
-</div>
-
 ---
 
 ## 🧪 Tutorial 2: Rodando um Servidor Web (Nginx)
@@ -38,11 +33,6 @@ Explicando cada flag:
 | `nginx` | Nome da imagem a usar |
 
 Após rodar, abra `http://localhost:8080` no navegador:
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Navegador mostrando a página "Welcome to nginx!" em http://localhost:8080</span>
-</div>
-
 ---
 
 ## 📋 Tabela de Comandos: Gerenciando Contêineres
@@ -80,11 +70,6 @@ cat /usr/share/nginx/html/index.html
 # Para sair do contêiner e voltar ao seu terminal:
 exit
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Terminal mostrando prompt mudando para "root@container_id:/#" após `docker exec -it meu-site bash`, e listagem de arquivos internos</span>
-</div>
-
 !!! tip "Dica: alguns contêineres usam `sh` em vez de `bash`"
     Se `bash` não funcionar (contêineres baseados em Alpine Linux), use `sh`:
     ```bash
@@ -155,7 +140,3 @@ docker exec -it meu-postgres psql -U aluno -d workshop
 ```
 
 Ou use qualquer cliente gráfico (DBeaver, TablePlus, pgAdmin) apontando para `localhost:5432`.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: DBeaver ou pgAdmin conectando ao PostgreSQL rodando no Docker em localhost:5432 com usuário "aluno"</span>
-</div>

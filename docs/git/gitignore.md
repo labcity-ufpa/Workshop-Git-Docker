@@ -25,11 +25,6 @@ touch .gitignore
 ```
 
 Ou no VS Code: **File → New File** e nomeie como `.gitignore`.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code mostrando o arquivo `.gitignore` criado na raiz do projeto, com ícone de engrenagem característico</span>
-</div>
-
 ---
 
 ## Exemplos por linguagem
@@ -132,11 +127,6 @@ Agora o `.env` **desapareceu** da lista — o Git o está ignorando.
 git add .gitignore
 git commit -m "chore: adiciona .gitignore"
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code Source Control mostrando `.env` sumindo da lista de mudanças após adicionar regra ao `.gitignore`</span>
-</div>
-
 ---
 
 ## ⚠️ Cuidado: arquivo já rastreado
@@ -154,7 +144,3 @@ git commit -m "chore: adiciona .gitignore"
 ## Dica: gitignore.io
 
 O site [gitignore.io](https://www.toptal.com/developers/gitignore) gera automaticamente um `.gitignore` completo para qualquer linguagem ou IDE. Basta digitar "Python", "Node", "VS Code" e baixar o arquivo pronto.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Site gitignore.io com campo de busca mostrando opções "Python, Node, VSCode" selecionadas</span>
-</div>

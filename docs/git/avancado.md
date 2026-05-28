@@ -51,11 +51,6 @@ git tag
 git push origin v1.0.0
 git push origin --tags     # envia TODAS as tags de uma vez
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: GitHub — aba "Releases" mostrando versões v1.0.0 e v1.1.0 com changelogs e assets para download</span>
-</div>
-
 ---
 
 ### ↩️ Restore — Descartando alterações
@@ -72,11 +67,6 @@ git restore --staged arquivo.txt
 
 !!! tip "Dica de IDE: Discard Changes no VS Code"
     No painel **Source Control**, clique com o botão direito sobre um arquivo modificado e selecione **"Discard Changes"** — equivale ao `git restore arquivo`.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code Source Control — menu de contexto do arquivo com opção "Discard Changes" destacada</span>
-</div>
-
 ---
 
 ### 🔙 Revert — Desfazendo um commit com segurança

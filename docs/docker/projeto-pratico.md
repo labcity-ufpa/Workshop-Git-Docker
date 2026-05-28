@@ -23,11 +23,6 @@ graph LR
     A -->|"redis://banco-redis:6379"| B
     B --- V
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Diagrama arquitetural colorido com os dois contêineres (Node.js e Redis) conectados na rede Docker e o volume de persistência</span>
-</div>
-
 ---
 
 ## Parte 1 — O Código da Aplicação
@@ -109,11 +104,6 @@ node_modules/
 .env
 *.log
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code mostrando a estrutura do projeto com os 4 arquivos criados: app.js, package.json, Dockerfile e .dockerignore</span>
-</div>
-
 ---
 
 ## Parte 3 — Orquestrando com docker-compose.yml
@@ -175,11 +165,6 @@ NAME          IMAGE              STATUS          PORTS
 app-redis     redis:7-alpine     Up              6379/tcp
 app-web       meu-app-docker-web Up              0.0.0.0:3000->3000/tcp
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Docker Desktop mostrando os dois contêineres (app-web e app-redis) com status "Running" agrupados como "meu-app-docker"</span>
-</div>
-
 ---
 
 ## Parte 5 — Testando e Explorando
@@ -187,11 +172,6 @@ app-web       meu-app-docker-web Up              0.0.0.0:3000->3000/tcp
 **Acesse no navegador:**
 
 Abra `http://localhost:3000` e atualize a página várias vezes — veja o contador subindo!
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Navegador em http://localhost:3000 mostrando "Esta página foi visitada 5 vezes" com o layout HTML simples da API</span>
-</div>
-
 **Veja os logs da API em tempo real:**
 
 ```bash

@@ -77,11 +77,6 @@ EXPOSE 3000
 # 7. Comando que será executado quando o contêiner iniciar
 CMD ["node", "app.js"]
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code mostrando a estrutura de arquivos do projeto — Dockerfile, app.js e package.json na raiz da pasta</span>
-</div>
-
 **Passo 3 —** Construa a imagem:
 
 ```bash
@@ -111,11 +106,6 @@ docker run -d -p 3000:3000 --name minha-api meu-app-node:1.0
 ```
 
 Acesse `http://localhost:3000` no navegador — você verá "Olá do meu contêiner Docker!" 🎉
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Navegador em http://localhost:3000 mostrando a mensagem da API Node.js dockerizada</span>
-</div>
-
 ---
 
 ## 🧪 Tutorial 2: O arquivo .dockerignore

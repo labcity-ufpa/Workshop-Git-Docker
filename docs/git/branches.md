@@ -19,11 +19,6 @@ gitGraph
    merge feature/login id: "merge: login"
    merge feature/dashboard id: "merge: dashboard"
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Representação visual de branches no GitHub ou GitKraken mostrando linhas paralelas de desenvolvimento</span>
-</div>
-
 ---
 
 ## 🧪 Tutorial Guiado: Trabalhando com Branches
@@ -50,11 +45,6 @@ git switch -c feature/login
 
 !!! tip "Dica de IDE: trocar de branch no VS Code"
     No **canto inferior esquerdo** do VS Code você vê o nome da branch atual (ex: `main`). Clique nele para ver a lista de branches e trocar — ou criar uma nova diretamente pela interface.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code — canto inferior esquerdo com o nome da branch `feature/login` destacado e menu suspenso de branches aberto</span>
-</div>
-
 ### Passo 3 — Faça suas alterações e commits
 
 ```bash
@@ -129,11 +119,6 @@ git pull
 
 !!! tip "Dica de IDE: Sync no VS Code"
     Após fazer commit, o VS Code mostra um ícone de **sincronização** na barra de status (↑ para push, ↓ para pull). Clicar nele faz o push/pull automaticamente.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code barra de status inferior mostrando o ícone de sincronização (↑1 ↓0) após um commit local</span>
-</div>
-
 | Comando | Função |
 | :--- | :--- |
 | `git clone URL` | Copia um repositório remoto para a máquina local. |
@@ -162,19 +147,9 @@ graph LR
    ```
 
 2. Acesse o GitHub — ele vai exibir automaticamente um botão **"Compare & pull request"**.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: GitHub — banner amarelo "Compare & pull request" aparecendo logo após o push de uma branch nova</span>
-</div>
-
 3. Clique nele, adicione um **título descritivo** e uma **descrição das mudanças**.
 
 4. Clique em **"Create pull request"** e aguarde a revisão.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Formulário de criação de Pull Request no GitHub com campos de título, descrição e botão "Create pull request"</span>
-</div>
-
 ---
 
 ## ⚡ Conflitos
@@ -192,11 +167,6 @@ Título da aplicação
 **Como resolver:**
 
 1. Abra o arquivo com conflito no VS Code — ele exibe os conflitos com destaque visual e botões de ação:
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code mostrando um conflito de merge com as opções "Accept Current Change", "Accept Incoming Change" e "Accept Both Changes" destacadas</span>
-</div>
-
 2. Clique em **"Accept Current Change"**, **"Accept Incoming Change"** ou edite manualmente para mesclar as duas versões.
 
 3. Após resolver todos os conflitos:

@@ -84,11 +84,6 @@ squash 9g0h1i2 corrige tamanho do botão
 ```
 
 **Passo 5 —** Salve e feche. O Git abrirá outra tela para você escrever a mensagem final do commit unificado.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code abrindo o arquivo de rebase interativo com os commits listados e instruções de comandos (pick, squash, drop, etc.)</span>
-</div>
-
 **Resultado final:**
 ```text
 8k9l0m1 feat: cria página inicial
@@ -117,11 +112,6 @@ f4e5d6c (Maria Silva    2024-03-15 10:23:01 -0300  3)     return valor * taxa
 
 !!! tip "Dica de IDE: Git Blame no VS Code"
     Instale a extensão **"GitLens"** no VS Code. Ela exibe, ao lado de cada linha, quem foi o último a modificá-la e quando — sem precisar rodar `git blame` no terminal.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code com GitLens mostrando anotações de blame embutidas no código — autor e data ao lado de cada linha</span>
-</div>
-
 ---
 
 ## 4. Git Log Avançado — Explorando o Histórico
@@ -147,11 +137,6 @@ git log -S "calcular_imposto"
 # Formato personalizado e compacto
 git log --pretty=format:"%h | %an | %ar | %s" --all
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: Terminal mostrando o output do `git log --graph --oneline --decorate --all` com árvore de branches colorida</span>
-</div>
-
 ---
 
 ## 5. Extensões Recomendadas para Git no VS Code
@@ -162,7 +147,3 @@ git log --pretty=format:"%h | %an | %ar | %s" --all
 | **Git Graph** | Visualização gráfica do histórico de branches (estilo GitKraken) |
 | **Conventional Commits** | Assistente para escrever mensagens de commit no padrão |
 | **GitHub Pull Requests** | Abre, revisa e comenta Pull Requests direto no VS Code |
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code aba Extensions com as extensões GitLens e Git Graph instaladas e habilitadas</span>
-</div>

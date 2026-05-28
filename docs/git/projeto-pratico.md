@@ -56,11 +56,6 @@ Conecte ao GitHub (crie um repositório vazio lá antes):
 git remote add origin https://github.com/SEU_USUARIO/meu-site-git.git
 git push -u origin main
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: GitHub — repositório recém-criado mostrando o arquivo index.html com o primeiro commit</span>
-</div>
-
 ---
 
 ## Parte 2 — Branch de Desenvolvimento (`develop`)
@@ -74,11 +69,6 @@ git push -u origin develop
 
 !!! tip "Dica de IDE: criando branches no VS Code"
     No canto inferior esquerdo, clique no nome da branch atual (`main`) → **"Create new branch"** → digitedesenvolvimento e confirme.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code — menu de branches com a opção "Create new branch from..." mostrando a branch develop sendo criada</span>
-</div>
-
 ---
 
 ## Parte 3 — Nova Funcionalidade (`feature`)
@@ -102,11 +92,6 @@ Envie para o remoto e abra um **Pull Request** de `feature/pagina-sobre` para `d
 ```bash
 git push -u origin feature/pagina-sobre
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: GitHub — Pull Request de `feature/pagina-sobre` para `develop` com status "Open" e botão "Merge pull request"</span>
-</div>
-
 ---
 
 ## Parte 4 — Integrando a Funcionalidade (merge)
@@ -147,11 +132,6 @@ git merge release/1.0.0
 git tag -a v1.0.0 -m "Versão 1.0.0 - lançamento inicial do site"
 git push origin main --tags
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: GitHub — aba "Releases" mostrando a tag v1.0.0 com o changelog e botão "Draft a new release"</span>
-</div>
-
 Também atualiza a `develop` com as mudanças da release:
 ```bash
 git switch develop

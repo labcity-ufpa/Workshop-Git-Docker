@@ -7,18 +7,8 @@ Escolha seu sistema operacional e siga o passo a passo:
 === "Windows"
 
     **Passo 1 —** Acesse o [site oficial do Git](https://git-scm.com/) e clique em **"Download for Windows"**.
-
-    <div class="img-placeholder">
-      <span>📸 Imagem: Página inicial do site git-scm.com com botão de download destacado</span>
-    </div>
-
-    **Passo 2 —** Execute o instalador baixado (`.exe`) e avance pelas telas clicando em **Next**. Nas opções de editor padrão, selecione **Visual Studio Code** (se disponível) ou mantenha o padrão.
-
-    <div class="img-placeholder">
-      <span>📸 Imagem: Tela do instalador do Git for Windows — seleção de editor padrão</span>
-    </div>
-
-    **Passo 3 —** Ao final da instalação, abra o **Git Bash** (clique com botão direito na área de trabalho → "Git Bash Here") e confirme:
+**Passo 2 —** Execute o instalador baixado (`.exe`) e avance pelas telas clicando em **Next**. Nas opções de editor padrão, selecione **Visual Studio Code** (se disponível) ou mantenha o padrão.
+**Passo 3 —** Ao final da instalação, abra o **Git Bash** (clique com botão direito na área de trabalho → "Git Bash Here") e confirme:
 
     ```bash
     git --version
@@ -109,10 +99,5 @@ git commit --amend
 ```
 
 O VS Code abrirá automaticamente um arquivo para você editar a mensagem.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code abrindo automaticamente para editar a mensagem de commit após `git commit --amend`</span>
-</div>
-
 !!! success "Configuração completa!"
     Você está pronto para começar a usar o Git. Siga para a próxima seção: **Comandos Essenciais**.

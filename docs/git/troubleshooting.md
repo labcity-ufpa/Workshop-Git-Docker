@@ -20,11 +20,6 @@ git commit --amend -m "docs: corrige README inicial"
 
 !!! tip "Dica de IDE: Undo Last Commit no VS Code"
     Acesse a paleta de comandos (`Ctrl + Shift + P`), digite **"Git: Undo Last Commit"** e confirme. O commit é desfeito mas as alterações ficam no staging, prontas para você refazer.
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code — paleta de comandos (Ctrl+Shift+P) com "Git: Undo Last Commit" selecionado</span>
-</div>
-
 !!! warning "Atenção"
     Só use `--amend` se o commit **ainda não foi enviado** (`push`) ao servidor remoto. Se já foi, isso causará conflitos para quem clonou o repositório.
 
@@ -102,11 +97,6 @@ Isso acontece quando você faz checkout diretamente de um **hash** de commit em 
 ```
 HEAD detached at 9f8e7d6
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code — canto inferior esquerdo mostrando "(HEAD detached at a1b2c3d)" em vez do nome de uma branch</span>
-</div>
-
 **Para sair e voltar ao normal (perdendo as alterações locais):**
 ```bash
 git switch main
@@ -138,11 +128,6 @@ git pull
 # 3. Envie agora
 git push
 ```
-
-<div class="img-placeholder">
-  <span>📸 Imagem: VS Code notificação de conflito após `git pull` — mostrando arquivos em conflito na aba Source Control</span>
-</div>
-
 ---
 
 ## 7. "Preciso desfazer um push já publicado"
