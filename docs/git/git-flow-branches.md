@@ -8,8 +8,8 @@
 flowchart TD
     M[main] -->|1. cria branch| F[feature / fix / patch]
     F -->|2. MR para testar| S[staging]
-    S -->|3. validou? sim| R[release]
-    M -->|3. cria release| R
+    M -->|3. cria release| R[release]
+    F -->|3. merge na release| R
     R -->|4. merge + tag| M
     M -->|5. sync| S
 ```

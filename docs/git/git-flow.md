@@ -52,7 +52,7 @@ Agora, com um fluxo organizado:
 O Git Flow se baseia em **3 princípios**:
 
 1. **Isolamento** — Trabalho em progresso nunca contamina código estável.
-2. **Validação em camadas** — Código passa por feature (de main) → staging (teste) → release → main.
+2. **Validação em camadas** — Feature nasce de main → testa em staging → mergeia na release → release vai para main.
 3. **Rastreabilidade** — Cada versão publicada tem tag, changelog e histórico limpo.
 
 ---

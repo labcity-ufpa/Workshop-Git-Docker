@@ -8,18 +8,39 @@ O processo completo de preparar, validar e publicar uma nova versão.
 
 ```mermaid
 flowchart TD
-    A[Features validadas em staging] --> B[Criar release branch de main]
-    B --> C[Merge features validadas na release]
-    C --> D[Atualizar CHANGELOG + versão]
-    D --> E[Testes finais]
-    E --> F{Aprovado?}
-    F -->|Não| G[Fix na release branch]
-    G --> E
-    F -->|Sim| H[Merge em main]
-    H --> I[Criar tag]
-    I --> J[Sync staging com main]
-    J --> K[Deploy]
+    A[Criar release branch de main] --> B[Merge das feature branches na release]
+    B --> C[Atualizar CHANGELOG + versão]
+    C --> D[Testes finais]
+    D --> E{Aprovado?}
+    E -->|Não| F[Fix na release branch]
+    F --> D
+    E -->|Sim| G[Merge em main]
+    G --> H[Criar tag]
+    H --> I[Sync staging com main]
+    I --> J[Deploy]
 ```
+
+---
+
+## Quando gerar uma release?
+
+Não existe uma regra fixa de periodicidade — depende do time e da necessidade de publicação.
+
+!!! note "Critério para criar uma release"
+    A release é criada quando o **time decide que há features validadas suficientes** para justificar uma publicação. Isso pode ser:
+    
+    - Após 1 feature crítica ser validada (hotfix ou entrega urgente)
+    - Após acumular 3-5 features validadas em staging
+    - Em uma cadência combinada pelo time (semanal, quinzenal, por sprint)
+    - Quando o coordenador/PO decide que é hora de publicar
+
+**É normal ter várias branches em andamento ao mesmo tempo.** Nem todas entram na mesma release — apenas as que já foram validadas em staging. As demais continuam seu ciclo normalmente e entrarão em uma release futura.
+
+| Cenário | O que acontece |
+|---------|---------------|
+| 5 branches ativas, 3 validadas | Release inclui apenas as 3 validadas. As outras 2 continuam. |
+| Feature urgente validada | Pode gerar release só com ela, sem esperar as demais. |
+| Nenhuma feature validada | Não cria release — simples assim. |
 
 ---
 
